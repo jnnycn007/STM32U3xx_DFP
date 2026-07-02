@@ -366,6 +366,8 @@ int Init (unsigned long adr, unsigned long clk, unsigned long fnc) {
 	  }
 #if defined STM32U3xx_256K_0C00 || STM32U3xx_256K_0800
 			gFlashSize = 0x40000;
+#elif defined  STM32U3xx_128K_0C00 || STM32U3xx_128K_0800
+		gFlashSize = 0x20000;
 #elif defined  STM32U3xx_512K_0C00 || STM32U3xx_512K_0800
 		gFlashSize = 0x80000;
 #elif
